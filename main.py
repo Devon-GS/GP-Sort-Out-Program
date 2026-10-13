@@ -27,7 +27,7 @@ def gp_analysis():
     for x in data:
         barcode = x[0].strip()
         name = x[1].strip()
-        amt = x[2].strip()
+        amt = float(str(x[2]).strip())
 
         simple_list.append([barcode, name, amt, x[3], x[4], x[5], x[6], x[7], x[8], x[9]])
 
